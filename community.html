@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Community | Book Haven Bookstore</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-title">
+      <img src="logo.png" alt="Book Haven Logo" class="site-logo" />
+      <h1 class="site-title">Book Haven</h1>
+    </div>
+    <nav class="main-nav">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <div id="menu" class="menu-links">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="community.html">Community</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Intro -->
+    <section class="section-block modern">
+      <h2 class="section-title">Community Connections</h2>
+      <p>Book Haven isn’t just a bookstore—it’s a hub for local readers, artists, and dreamers. Here's how we’re making
+        a difference together:</p>
+    </section>
+
+    <!-- Get Involved -->
+    <section class="section-block modern">
+      <h2 class="section-title">Get Involved</h2>
+      <div class="modern-grid">
+        <div class="modern-card"><i class="bi bi-people-fill"></i> Volunteer for Story Time Saturdays</div>
+        <div class="modern-card"><i class="bi bi-box-seam"></i> Host a book donation bin at your business</div>
+        <div class="modern-card"><i class="bi bi-gift-fill"></i> Help assemble free reading kits for schools</div>
+      </div>
+    </section>
+
+    <!-- Collaborations -->
+    <section class="section-block modern">
+      <h2 class="section-title">Collaborations</h2>
+      <div class="modern-grid">
+        <div class="modern-card"><i class="bi bi-star-fill"></i> Monthly Artist Spotlight in-store gallery</div>
+        <div class="modern-card"><i class="bi bi-journal-bookmark-fill"></i> Partnered with Novel City Elementary for a
+          1,000 Book Challenge</div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-block modern">
+      <h2 class="section-title">What Our Community Says</h2>
+      <div class="testimonial-box">“This store rekindled my love of reading.”<br><small>~ Jasmine M.</small></div>
+      <div class="testimonial-box">“A peaceful escape and always a kind word from staff.”<br><small>~ Carlos D.</small>
+      </div>
+      <div class="testimonial-box">“They donated books to our entire 4th-grade class.”<br><small>~ Ms. Hill, 4th Grade
+          Teacher</small></div>
+    </section>
+
+    <!-- Events -->
+    <section class="section-block modern">
+      <h2 class="section-title">Upcoming Events</h2>
+      <div class="modern-grid">
+        <div class="modern-card"><i class="bi bi-pen-fill"></i> Author Signing – June 15th @ 2PM (featuring Ava Brooks)
+        </div>
+        <div class="modern-card"><i class="bi bi-mic-fill"></i> Local Voices Open Mic – July 20th @ 6PM</div>
+        <div class="modern-card"><i class="bi bi-book-fill"></i> Book Club: "The Invisible Thread" – Every Wednesday @
+          7PM</div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="back-button">
+      <a href="about.html">Learn More & Contact Us</a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <form>
+      <label for="newsletter">Join Email List</label><br>
+      <input type="email" id="newsletter" placeholder="Your email" />
+      <button type="submit">Subscribe</button>
+    </form>
+
+    <div class="socials">
+      <p>Follow us:</p>
+      <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+      <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="gallery.html">Gallery</a> |
+      <a href="about.html">About</a> |
+      <a href="community.html">Community</a>
+    </nav>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("visible");
+    }
+  </script>
+
+</body>
+
+</html>

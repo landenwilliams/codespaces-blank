@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>About Us | Book Haven Bookstore</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-title">
+            <img src="logo.png" alt="Book Haven Logo" class="site-logo" />
+            <h1 class="site-title">Book Haven</h1>
+        </div>
+        <nav class="main-nav">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div id="menu" class="menu-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About Us</a>
+                <a href="community.html">Community</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <h2 class="section-title">About Us</h2>
+
+            <div class="about-image-placeholder">
+                <img src="images/main.png" alt="Book 1" class="product-img" />
+            </div>
+
+            <ul class="about-list">
+                <li>
+                    <strong>“Our Mission”</strong>
+                    <p>We believe in building a community of readers and supporting lifelong learning.</p>
+                </li>
+                <li>
+                    <strong>“Our Story”</strong>
+                    <p>Started in a cozy corner of Novel City, Book Haven grew from a local passion into a neighborhood
+                        staple.</p>
+                </li>
+                <li>
+                    <strong>“Store Hours”</strong>
+                    <ul class="hours-list">
+                        <li>Mon–Fri: 9am–8pm</li>
+                        <li>Sat: 10am–6pm</li>
+                        <li>Sun: 11am–5pm</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>“Get in Touch”</strong><br>
+                    <span><i class="bi bi-geo-alt-fill"></i> <em>Address:</em> 123 Book St, Novel City, NY</span><br>
+                    <span><i class="bi bi-telephone-fill"></i> <em>Phone:</em> (555) 123-4567</span><br>
+                    <span><i class="bi bi-envelope-fill"></i> <em>Email:</em> info@bookhaven.com</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Feedback Form -->
+        <section class="feedback-form">
+            <h2 class="section-title">Feedback</h2>
+            <form>
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+                <textarea rows="4" placeholder="Message..." required></textarea>
+                <button type="submit" class="add-button">Contact Us</button>
+            </form>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="back-button">
+            <a href="community.html">Get Involved</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <form>
+            <label for="newsletter">Join Email List</label><br>
+            <input type="email" id="newsletter" placeholder="Your email" />
+            <button type="submit">Subscribe</button>
+        </form>
+
+        <div class="socials">
+            <p>Follow us:</p>
+            <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="about.html">About</a> |
+            <a href="community.html">Community</a>
+        </nav>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("visible");
+        }
+    </script>
+
+</body>
+
+</html>

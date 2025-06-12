@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery | Book Haven Bookstore</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-title">
+      <img src="logo.png" alt="Book Haven Logo" class="site-logo" />
+      <h1 class="site-title">Book Haven</h1>
+    </div>
+    <nav class="main-nav">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <div id="menu" class="menu-links">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="community.html">Community</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="gallery-header">
+      <h2 class="section-title">Shop All Products</h2>
+      <a href="#" class="cart-button">Cart</a>
+    </section>
+
+    <!-- Product Gallery Table -->
+    <section class="product-table">
+      <table>
+        <tr>
+          <td>
+            <img src="images/Client3_Book1.png" alt="Book 1" class="product-img" />
+            <button class="add-button">Add to Cart</button>
+          </td>
+          <td>
+            <img src="images/Client3_Book2.png" alt="Book 2" class="product-img" />
+            <button class="add-button">Add to Cart</button>
+          </td>
+          <td>
+            <img src="images/Client3_Book3.png" alt="Book 3" class="product-img" />
+            <button class="add-button">Add to Cart</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="images/Client3_Magazine1.png" alt="Magazine 1" class="product-img" />
+            <button class="add-button">Add to Cart</button>
+          </td>
+          <td>
+            <img src="images/Client3_Magazine2.png" alt="Magazine 2" class="product-img" />
+            <button class="add-button">Add to Cart</button>
+          </td>
+          <td>
+            <img src="images/Client3_Magazine3.png" alt="Magazine 3" class="product-img" />
+            <button class="add-button">Add to Cart</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="images/Client3_Notebook.png" alt="Notebook" class="product-img" />
+            <button class="add-button">Add to Cart</button>
+          </td>
+          <td>
+            <img src="images/Client3_Stickers.png" alt="Stickers" class="product-img" />
+            <button class="add-button">Add to Cart</button>
+          </td>
+          <td>
+            <img src="images/Client3_ToteBag.png" alt="Tote Bag" class="product-img" />
+            <button class="add-button">Add to Cart</button>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Back Button -->
+    <section class="back-button">
+      <a href="index.html">Back to Homepage</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <form>
+      <label for="newsletter">Join Email List</label><br>
+      <input type="email" id="newsletter" placeholder="Your email" />
+      <button type="submit">Subscribe</button>
+    </form>
+
+    <div class="socials">
+      <p>Follow us:</p>
+      <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+      <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="gallery.html">Gallery</a> |
+      <a href="about.html">About</a> |
+      <a href="community.html">Community</a>
+    </nav>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("visible");
+    }
+  </script>
+
+</body>
+
+</html>
